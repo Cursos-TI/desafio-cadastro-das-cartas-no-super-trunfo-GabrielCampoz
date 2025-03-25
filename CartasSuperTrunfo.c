@@ -12,6 +12,8 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontosTurismo1, pontosTurismo2;
+    float densidadePopulacional1, densidadePopulacional2;
+    float pibPerCapita1, pibPerCapita2;
 
 //pede para o usuario informar os dados da primeira carta
     printf("--DADOS DA PRIMEIRA CARTA--\n");
@@ -30,6 +32,10 @@ int main() {
     printf("Informe a quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTurismo1);
 
+//calcula densidade populacional e pib percapita da primeira carta
+    densidadePopulacional1 = populacao1 / area1;
+    pibPerCapita1 = pib1 / populacao1;
+
 //imprime o resultado da primeira carta
     printf("---CARTA 1--- \n");
     printf("Estado: %s \n", estado1);
@@ -39,6 +45,8 @@ int main() {
     printf("Área: %f \n", area1);
     printf("PIB: %f \n", pib1);
     printf("Número de pontos turísticos: %d \n", pontosTurismo1);
+    printf("Densidade populacional: %.2f \n", densidadePopulacional1);
+    printf("PIB per Capita: %.2f \n", pibPerCapita1);
 
 //pede para o usuario informar os dados da segunda carta
     printf("--DADOS DA SEGUNDA CARTA--\n");
@@ -57,6 +65,10 @@ int main() {
     printf("Informe a quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTurismo2);
 
+//calcula densidade populacional e pib per capita da segunda carta
+    densidadePopulacional2 = populacao2 / area2;
+    pibPerCapita2 = pib2 / populacao2;
+
 //imprime o resultado da segunda carta
     printf("---CARTA 2--- \n");
     printf("Estado: %s \n", estado2);
@@ -66,6 +78,8 @@ int main() {
     printf("Área: %f \n", area2);
     printf("PIB: %f \n", pib2);
     printf("Número de pontos turísticos: %d \n", pontosTurismo2);
+    printf("Densidade populacional: %.2f \n", densidadePopulacional2);
+    printf("PIB per Capita: %.2f \n", pibPerCapita2);
 
     return 0;
 }
